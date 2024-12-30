@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Deletar Vídeo</title>
+  <link href="assets/style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <form action="http://localhost:3334/videos/delete" method="post" class="form">
+      <h2>Deletar vídeo:</h2>
+
+      <div class="form-control">
+        <label for="id">ID do vídeo: </label>
+        <input type="text" id="id" name="id" placeholder="Digite o ID do vídeo">
+      </div>
+
+      <button type="submit" id="btDeletar" name="btDeletar" value="deletar">Deletar</button>
+    </form>
+  </div>
+</body>
+</html>

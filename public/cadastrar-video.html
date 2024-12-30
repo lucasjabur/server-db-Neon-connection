@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Cadastro de Vídeo</title>
+  <link href="assets/style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <form action="http://localhost:3334/videos" method="post" class="form">
+      <h2>Cadastro de vídeo:</h2>
+
+      <div class="form-control">
+        <label for="title">Título do vídeo: </label>
+        <input type="text" id="title" name="title" placeholder="Digite o título do vídeo" required>
+      </div>
+
+      <div class="form-control">
+        <label for="description">Descrição do vídeo: </label>
+        <input type="text" id="description" name="description" placeholder="Digite a descrição do vídeo" required>
+      </div>
+
+      <div class="form-control">
+        <label for="duration">Duração do vídeo: </label>
+        <input type="number" id="duration" name="duration" placeholder="Digite o tempo de duração do vídeo" required>
+      </div>
+
+      <button type="submit" id="btAcao" name="btAcao" value="conectar">Registrar</button>
+    </form>
+  </div>
+</body>
+</html>
