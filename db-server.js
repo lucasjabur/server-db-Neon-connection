@@ -1,7 +1,7 @@
 import { randomUUID } from "node:crypto"
 import { sql } from "./db.js"
 
-export class DatabasePostgres {
+export class DatabaseNeon {
 
   async list(search) { // 'async' is being used beacause of the necessity of utilizing the 'await' command
     let videos

@@ -3,12 +3,12 @@
 import { fastify } from 'fastify'
 import fastifyFormbody from '@fastify/formbody'
 import fastifyStatic from '@fastify/static'
-import { DatabasePostgres } from './db-server.js'
+import { DatabaseNeon } from './db-server.js'
 import path from 'path'
 import open from 'open'
 
 const server = fastify()
-const db = new DatabasePostgres()
+const db = new DatabaseNeon()
 
 /* route creation usgin HTTP methods:
   - GET (used to receive information)
@@ -101,7 +101,7 @@ server.listen({
   }
 
   // Abrir a URL do formulário no navegador
-  open('http://localhost:3334/delete-video')
+  open('http://localhost:3334/new-video')
 
-  console.log(`Server listening at ${address}`)
+  console.log(`Server listening at ${address}`) 
 })
